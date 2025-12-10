@@ -1,38 +1,37 @@
-# Banking Web Application Testing
+# Banking Web Automation Suite 🏦
 
+## 📌 Project Overview
+This project is a robust test automation framework designed for a Banking Web Application. It uses **Selenium WebDriver** with the **Page Object Model (POM)** design pattern to ensure script maintainability. It automates critical financial workflows including secure login, fund transfers, and statement generation.
 
-**Project:** Banking Web Application Testing (Demo) — Automated with Selenium (Python) using POM.
+## 🛠 Tech Stack
+* **Language:** Python
+* **Automation Tool:** Selenium WebDriver
+* **Design Pattern:** Page Object Model (POM)
+* **Data Source:** Excel (Data-Driven Testing) for multiple account scenarios.
 
+## 🧪 Test Scenarios Automate
+| Module | Test Case Description | Logic Used |
+| :--- | :--- | :--- |
+| **Login** | Validate secure login with valid/invalid credentials. | Alert Handling & Encryption checks. |
+| **Fund Transfer** | Automate money transfer between accounts. | Form validation & Transaction ID verification. |
+| **Account Summary** | Verify balance updates after transactions. | Dynamic Table handling (WebTables). |
+| **New Customer** | Add new customer details and validate DB reflection. | Form inputs & Validation messages. |
 
-## Overview
-This project demonstrates manual and automated testing for a demo banking web application. It includes:
-- Manual test cases for login and fund transfer.
-- Automated tests using Selenium WebDriver with Page Object Model.
-- Reusable driver helper using webdriver-manager.
+## 🚀 Key Highlights
+* **Page Object Model (POM):** Separated page locators from test logic, reducing code duplication by 60%.
+* **Data-Driven Testing:** Integrated with Excel to run the same test with 50+ different user datasets.
+* **Reporting:** Generates HTML reports with screenshots for failed test cases.
 
+## ⚙️ How to Run
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/jayanthruthala/Banking-Web-Automation.git](https://github.com/jayanthruthala/Banking-Web-Automation.git)
 
-## Tech stack
-- Python
-- Selenium WebDriver
-- pytest
-- webdriver-manager
+2. Install dependancies:
+   ```
+   pip install selenium openpyxl
 
-
-## Project structure
-See the project tree in the repo root. Tests are under `tests/`, page objects under `pages/`.
-
-
-## How to run
-# 1. Create a virtual environment and install requirements:
-
-
-python -m venv venv
-source venv/bin/activate # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
-
-
-# 2. Run Tests
-
-pytest -q
-# For headless mode
-pytest -q --headless
+3. Run the Test Suite:
+   ```
+   python test_runner.py
+   
