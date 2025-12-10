@@ -25,7 +25,7 @@ This project is a robust test automation framework designed for a Banking Web Ap
 ## ⚙️ How to Run
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/jayanthruthala/Banking-Web-Automation.git](https://github.com/jayanthruthala/Banking-Web-Automation.git)
+   git clone [https://github.com/ReemasFury/Banking-Web-Automation.git](https://github.com/ReemasFury/Banking-Web-Automation.git)
 
 2. Install dependancies:
    ```
